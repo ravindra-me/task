@@ -147,6 +147,14 @@ body {
   color: rgb(87, 87, 87);
 }
 
+.main-section {
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start;
+  margin: 0 auto;
+  height: 100vh;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;

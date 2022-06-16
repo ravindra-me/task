@@ -5,15 +5,7 @@ import Common from "./components/Common";
 
 export default function App() {
   return (
-    <div
-      style={{
-        width: "100%",
-        maxWidth: "1200px",
-        alignItems: "flex-start",
-        margin: "0 auto",
-        height: "100vh",
-      }}
-    >
+    <div className="main-section">
       <Header />
       <main className="flex flex-start main-content">
         <Aside />
