@@ -1,0 +1,53 @@
+.modal {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  opacity: 1;
+  top: 20px;
+  right: 30px;
+  bottom: 20px;
+  left: 30px;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 5px;
+  background-color: white;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.modal-left-side {
+  flex: 0 1 40%;
+  padding: 20px;
+  height: 100%;
+  background-color: lightcoral;
+}
+
+.modal-right-side {
+  flex: 0 1 60%;
+  padding: 20px;
+  height: 100%;
+}
+
+.modal-container {
+  height: 100%;
+}
+
+.modal-right-side .primary-heading {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.modal-right-side input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.button-container {
+  margin-top: 52px;
+}
+
+.modal-left-side p {
+  color: white;
+  margin-top: 30px;
+}

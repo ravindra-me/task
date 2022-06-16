@@ -1,0 +1,40 @@
+table {
+  width: 100%;
+  margin-top: 20px;
+  max-height: 160px;
+}
+
+th {
+  padding: 10px 0;
+  background-color: rgb(216, 216, 216);
+  text-align: left;
+  border: 2px solid lightgray;
+  padding-left: 8px;
+}
+
+thead {
+  background-color: #ccd9e0;
+}
+
+th:first-child {
+  border-left: 2px solid lightgray;
+}
+th:last-child {
+  border-right: 2px solid lightgray;
+}
+
+td {
+  border: 2px solid lightgray;
+  padding: 7px;
+}
+
+.deleteIconContainer {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(41, 194, 116);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

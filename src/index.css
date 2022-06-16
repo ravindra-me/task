@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:root {
+  --primary: rgb(227, 82, 77);
+  --secondary: rgb(223, 236, 255);
+  --ternary: rgb(120, 121, 123);
+  --bg-footer: rgb(35, 52, 123);
+  --quatery: rgb(16, 33, 105);
+  --primary-green: rgb(41, 194, 116);
+}
+html {
+  font-size: 16px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(87, 87, 87);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Header */
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+.logo,
+.profile {
+  margin-bottom: 6px;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+/* Aside Nav Bar */
+.aside {
+  flex: 0 1 20%;
+  border-right: 1px solid rgb(87, 87, 87);
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-column {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.link {
+  color: rgb(87, 87, 87);
+  text-decoration: none;
+  padding: 15px 12px;
+  width: 100%;
+}
+
+.active-link {
+  background-color: var(--primary-green);
+  width: 100%;
+  padding: 8px 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Components */
+.components {
+  flex: 0 1 80%;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.primary-heading {
+  font-weight: 600;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.input-label-container {
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.primary-btn {
+  background-color: var(--primary-green);
+  width: 80px;
+}
+
+.secondary-btn {
+  background-color: rgb(255, 187, 65);
+  margin-left: 20px;
+  width: 80px;
+}
+
+header {
+  border-bottom: 1px solid rgb(87, 87, 87);
+}
+
+select {
+  width: 50%;
+  padding: 3px;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.add-user {
+  border-radius: 15px;
+  padding: 5px 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
