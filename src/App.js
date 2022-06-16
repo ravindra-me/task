@@ -9,12 +9,13 @@ export default function App() {
       style={{
         width: "100%",
         maxWidth: "1200px",
-        margin: "2rem auto",
         alignItems: "flex-start",
+        margin: "0 auto",
+        height: "100vh",
       }}
     >
       <Header />
-      <main className="flex flex-start">
+      <main className="flex flex-start main-content">
         <Aside />
         <section className="components">
           <Routes>

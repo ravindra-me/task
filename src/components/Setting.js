@@ -15,8 +15,10 @@ function Setting() {
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-    localStorage.setItem("tableData", JSON.stringify([...tableData]));
-  }, []);
+    if (!localStorage.getItem("tableData")) {
+      localStorage.setItem("tableData", JSON.stringify([...tableData]));
+    }
+  }, [tableData]);
 
   const [openModal, setOpenModal] = useState(false);
 
@@ -48,15 +50,11 @@ function Setting() {
             Add user
           </button>
           <div className="table-container">
-            <Table
-              data={tableData}
-              handleDeleteUser={handleDeleteUser}
-              count={count}
-            />
+            <Table handleDeleteUser={handleDeleteUser} count={count} />
             <div className="pagination">
               <span
                 onClick={() => {
-                  if (count >= 1) {
+                  if (count > 1) {
                     setCount(count - 1);
                   }
                 }}
@@ -66,7 +64,17 @@ function Setting() {
               <div className="pages">
                 <span className="page-btn">{count}</span>
               </div>
-              <span onClick={() => setCount(count + 1)}>Next</span>
+              <span
+                onClick={() => {
+                  if (
+                    JSON.parse(localStorage.getItem("tableData")).length >
+                    count * 4
+                  )
+                    setCount(count + 1);
+                }}
+              >
+                Next
+              </span>
             </div>
           </div>
         </div>

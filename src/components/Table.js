@@ -31,13 +31,10 @@ const tableHeaderData = [
 ];
 function Table(props) {
   const { count } = props;
-
   const { handleDeleteUser } = props;
-
   const data = JSON.parse(localStorage.getItem("tableData"));
-  let data2;
-
-  data2 = count === 1 ? data.slice(0, 4) : data.slice(4 * count - 1, 4 * count);
+  let modifyData;
+  modifyData = data.slice(count - 1, count * 4);
 
   return (
     <table>
@@ -53,7 +50,7 @@ function Table(props) {
         </tr>
       </thead>
       <tbody>
-        {data2.map((row, index) => (
+        {modifyData.map((row, index) => (
           <tr key={row.id}>
             <td>{index + 1}</td>
             <td>{row.name}</td>

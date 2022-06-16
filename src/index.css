@@ -166,10 +166,6 @@ body {
   width: 100%;
   object-fit: cover;
 }
-.logo,
-.profile {
-  margin-bottom: 6px;
-}
 
 .logo-img {
   width: 32px;
@@ -189,6 +185,7 @@ body {
 .aside {
   flex: 0 1 20%;
   border-right: 1px solid rgb(87, 87, 87);
+  height: 100%;
 }
 
 .flex-start {
@@ -266,12 +263,20 @@ img {
 }
 
 header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
   border-bottom: 1px solid rgb(87, 87, 87);
 }
 
 select {
   width: 50%;
   padding: 3px;
+}
+
+.header-div {
+  width: 100%;
 }
 
 .justify-flex-end {
@@ -293,4 +298,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main-content {
+  height: calc(100% - 50px);
 }
